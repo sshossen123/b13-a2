@@ -17,7 +17,7 @@
 }
 .container{
     max-width: 1600px;
-    height: 760px;
+    height: auto;
 
 }
 nav{
@@ -72,8 +72,14 @@ nav>div>ul>li>a{
 .banner-container>.rounded-mic-parent>.round-shape{
 box-sizing: border-box;
     margin: 0, auto;
-padding:109px 625px 309px 625px ;
+    position: relative;
 
+
+
+}
+.banner-container>.rounded-mic-parent>.round-shape.mic{
+
+position: absolute;
 
 
 }
@@ -85,7 +91,7 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
 
 
 }
-.banner-container .banner-botom{
+.banner-container .botom{
     
 width: 550px;
 height: 168px;
@@ -98,11 +104,26 @@ gap: 24;
 
 
 }
-.banner-container.mic{
+.banner-container{
+    height: 760px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 101px 525px;
+    color: white;
+
+}
+.banner-container.round-shape{
+
+padding-left: 625px;
 
 }
 .rounded-mic-parent.mic{
     width: 200px;
     height: 200px;
-    margin-top: 0;
+}
+.banner-container>.botom {
+   display: flex;
+   flex-direction: column;
 }
